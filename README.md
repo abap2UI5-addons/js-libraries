@@ -14,6 +14,8 @@ Included Custom Controls:
  * Product tours, highlights, contextual help and more
  * https://driverjs.com/
  * Z2UI5_CL_DEMO_APP_119
+<img width="1300" alt="303826360-c01ed4d2-6735-47bb-b7b3-6f93c6ed7041" src="https://github.com/user-attachments/assets/cc9d25b0-a229-40ec-84f2-9fa604b26c62">
+
 <img width="1300" alt="image" src="https://github.com/abap2UI5/abap2UI5-documentation/assets/102328295/c01ed4d2-6735-47bb-b7b3-6f93c6ed7041"><br><br>
 
 ### 2. bwip-js
