@@ -40,7 +40,7 @@ Included Custom Controls:
 * Z2UI5_CL_DEMO_APP_146
 <img width="1300" alt="image" src="https://github.com/abap2UI5/abap2UI5-documentation/assets/102328295/289d85a9-7473-44c6-b5b9-f1ed2a8dcd99"><br><br>
 
-### 5. Chart.js
+### 6. Chart.js
 * Simple yet flexible JavaScript charting library for the modern web
 * https://www.chartjs.org/
 * Z2UI5_CL_DEMO_APP_148
