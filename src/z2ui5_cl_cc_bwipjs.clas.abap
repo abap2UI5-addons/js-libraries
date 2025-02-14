@@ -90,7 +90,7 @@ CLASS Z2UI5_CL_CC_BWIPJS IMPLEMENTATION.
                      |\n| &&
                      `      },` &&
                      `   onAfterRendering() {  ` &&
-                      `     if(window.bwipjs == undefined) {  const loadScript = (FILE_URL, async = true, type = "text/javascript") => {` && |\n| &&
+                      `    debugger; if(window.bwipjs == undefined) {  const loadScript = (FILE_URL, async = true, type = "text/javascript") => {` && |\n| &&
                      `              return new Promise((resolve, reject) => {` && |\n| &&
                      `                  try {` && |\n| &&
                      `                      const scriptEle = document.createElement("script");` && |\n| &&
@@ -118,18 +118,28 @@ CLASS Z2UI5_CL_CC_BWIPJS IMPLEMENTATION.
                      `          loadScript("https://cdnjs.cloudflare.com/ajax/libs/bwip-js/4.1.1/bwip-js-min.js")` && |\n| &&
                      `              .then( data  => {` && |\n| &&
                      `                  this.BusyDialog.close();` && |\n| &&
-                       ` let canvas = bwipjs.toCanvas('mycanvas', {` && |\n| &&
-                     `            bcid:        this.getProperty("bcid"),       // Barcode type` && |\n| &&
-                     `            text:        this.getProperty("text"),    // Text to encode` && |\n| &&
-                     `            scale:       this.getProperty("scale"),               // 3x scaling factor` && |\n| &&
-                     `            height:      this.getProperty("height"),               // Bar height, in millimeters` && |\n| &&
-                     `            includetext: true,            // Show human-readable text` && |\n| &&
-                     `            textxalign:  'center',        // Always good to set this` && |\n| &&
-                     `              })` && |\n| &&
-                     `              .catch( err => {` && |\n| &&
-                     `                  new sap.m.MessageBox.error('Error on load bwip-js library: ' + err);` && |\n| &&
-                     `                  this.BusyDialog.close();` && |\n| &&
-                     `              }); } ) } else {` && |\n| &&
+                     `                    let canvas = bwipjs.toCanvas('mycanvas', {` && |\n|  &&
+                     `                        bcid: this.getProperty("bcid"),` && |\n|  &&
+                     `                        // Barcode type` && |\n|  &&
+                     `                        text: this.getProperty("text"),` && |\n|  &&
+                     `                        // Text to encode` && |\n|  &&
+                     `                        scale: this.getProperty("scale"),` && |\n|  &&
+                     `                        // 3x scaling factor` && |\n|  &&
+                     `                        height: this.getProperty("height"),` && |\n|  &&
+                     `                        // Bar height, in millimeters` && |\n|  &&
+                     `                        includetext: true,` && |\n|  &&
+                     `                        // Show human-readable text` && |\n|  &&
+                     `                        textxalign: 'center',` && |\n|  &&
+                     `                        // Always good to set this` && |\n|  &&
+                     `                    })` && |\n|  &&
+*                     ` .catch(err => {` && |\n|  &&
+*                     `                        new sap.m.MessageBox.error('Error on load bwip-js library: ' + err);` && |\n|  &&
+*                     `                        this.BusyDialog.close();` && |\n|  &&
+*                     `                    }` && |\n|  &&
+*                     `                    );` && |\n|  &&
+                     `                }` && |\n|  &&
+                     `                ) ` && |\n|  &&
+                     ` } else {` && |\n| &&
                      ` let canvas = bwipjs.toCanvas('mycanvas', {` && |\n| &&
                      `            bcid:        this.getProperty("bcid"),       // Barcode type` && |\n| &&
                      `            text:        this.getProperty("text"),    // Text to encode` && |\n| &&
