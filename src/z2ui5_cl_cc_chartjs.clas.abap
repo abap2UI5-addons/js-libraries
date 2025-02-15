@@ -737,8 +737,8 @@ CLASS Z2UI5_CL_CC_CHARTJS IMPLEMENTATION.
       `         setTimeout( (oControl) => { ` && |\n| &&
       |\n| &&
       `             var ctx = document.getElementById(canvas_id); ` && |\n| &&
-      `             sap.z2ui5.autocolors = {}; try { sap.z2ui5.autocolors = window['chartjs-plugin-autocolors']; } catch (err){};` && |\n| &&
-      `             sap.z2ui5.ChartDeferred = {}; try { sap.z2ui5.ChartDeferred = window['chartjs-plugin-deferred']; } catch (err){};` && |\n| &&
+      `        //     sap.z2ui5.autocolors = {}; try { sap.z2ui5.autocolors = window['chartjs-plugin-autocolors']; } catch (err){};` && |\n| &&
+      `        //     sap.z2ui5.ChartDeferred = {}; try { sap.z2ui5.ChartDeferred = window['chartjs-plugin-deferred']; } catch (err){};` && |\n| &&
       `             window[cVar] = new Chart( ctx, Model );` && |\n| &&
       `   ` && |\n| &&
       `         }, 150 , oControl );` && |\n| &&
