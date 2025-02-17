@@ -1,4 +1,4 @@
-# JS Libraries for abap2UI5
+# js-libraries
 
 <i class="fa-brands fa-github"></i> [JS Library Addon on GitHub](https://github.com/abap2UI5-addons/js-libraries)
 
