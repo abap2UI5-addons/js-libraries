@@ -23,6 +23,6 @@
       "@abaplint/transpiler-cli": "^2.8.24"
     },
     "dependencies": {
-      "npm-check-updates": "^16.14.18"
+      "npm-check-updates": "^19.6.5"
     }
   }
