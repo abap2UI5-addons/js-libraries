@@ -1,8 +1,37 @@
-# js-libraries
+# js-libraries (obsolete)
+
+> [!IMPORTANT]
+> **This repository is no longer maintained. Its successor is
+> [abap2UI5-addons/custom-controls](https://github.com/abap2UI5-addons/custom-controls).**
+
+All libraries below were ported there — driver.js, bwip-js, Font Awesome,
+ImageMapster, animate.css and Chart.js — together with the controls from the old
+[custom-controls](https://github.com/abap2UI5-addons/custom-controls-obsolet)
+repository. What you find here still installs, but it receives no fixes.
+
+#### Why the successor is better
+
+* **The JavaScript is real UI5 code, not an ABAP string literal.** Here every
+  library ships as JS embedded in ABAP and injected into each view that uses it.
+  In the successor the controls live in their own BSP (`Z2UI5CC`), generated
+  from plain `.js` files — so they are syntax-checked in CI, editable in an
+  editor, loaded once by the browser and cached, instead of travelling with
+  every view again.
+* **They behave like ordinary controls.** One builder class per control, one
+  `render( )` call, properties bind two-way and events arrive in `on_event` just
+  like for `sap.m` controls.
+* **The libraries themselves are not vendored.** Each control fetches its
+  library on first use from a URL you can override (`liburl` / `cssurl`), so you
+  get the current version by default and can point at your own BSP when the
+  browsers have no internet access.
+* **More than libraries.** Beyond the six wrappers below the successor adds a
+  signature pad, a spreadsheet export and a form validator.
+
+#### What was here
 
 It's easy to extend abap2UI5 with additional JavaScript libraries and make them accessible via custom controls in the backend. Here all external libraries are collected and ready to use after installation with abapGit. Check out the samples to see how it works. <br>
 
-You use an external library, but it is not listed here? Feel free to send a PR to this addon. Special thanks to [choper725](https://github.com/choper725) contributing most of the Libraries.
+Special thanks to [choper725](https://github.com/choper725) contributing most of the Libraries.
 
 #### 1. Driver JS
  * Product tours, highlights, contextual help and more
